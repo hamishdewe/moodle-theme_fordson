@@ -38,3 +38,41 @@ defined('MOODLE_INTERNAL') || die();
 require('lib/scss_lib.php');
 require('lib/filesettings_lib.php');
 require('lib/fordson_lib.php');
+
+/**
+ * Prune the course list using any plugins that implement {type}_{plugin}_fordson_view_available_courses
+ *
+ * @param array $courses
+ * @param bool $doaction
+ * @return array
+ */
+function theme_fordson_override_view_available_courses($courses, $doaction = false) {
+  global $CFG;
+
+  $plugin_list = \core_plugin_manager::instance()->get_plugins();
+  foreach ($plugin_list as $type => $list) {
+    foreach ($list as $plugin) {
+      $functionname = "{$plugin->type}_{$plugin->name}_fordson_view_available_courses";
+      $lib = $plugin->rootdir . '/lib.php';
+      if (file_exists($lib)) {
+        include_once($lib);
+        if (function_exists($functionname)) {
+          $courses = $functionname($courses, $doaction);
+        }
+      }
+    }
+  }
+  return $courses;
+}
+
+function theme_fordson_redirect() {
+  global $COURSE, $PAGE;
+
+  if ($PAGE->bodyid === 'page-enrol-index') {
+    $courses = [];
+    $courses[$COURSE->id] = $COURSE;
+    theme_fordson_override_view_available_courses($courses, true);
+  }
+}
+
+theme_fordson_redirect();

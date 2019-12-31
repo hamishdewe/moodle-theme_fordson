@@ -28,8 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $plugin->version   = 2019120500;
 $plugin->release  = 'Moodle 3.8 Fordson v3.8 release 1.2';
 $plugin->maturity  = MATURITY_STABLE;
-$plugin->requires  = 2019111200;
+$plugin->requires  = 2019052002;
 $plugin->component = 'theme_fordson';
 $plugin->dependencies = array(
-    'theme_boost'  => 2019111800,
+    'theme_boost'  => 2019052000,
 );
