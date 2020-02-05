@@ -1001,17 +1001,17 @@ if ($PAGE->theme->settings->coursetilestyle < 10) {
   }
 }
 else {
-  class course_renderer extends \core_course_renderer {
-    public function course_modchooser($modules, $course) {
-      // This HILLBROOK function is overridden here to refer to the local theme's copy of modchooser to render a modified.
-      // Activity chooser for Hillbrook.
-      if (!$this->page->requires->should_create_one_time_item_now('core_course_modchooser')) {
-        return '';
-      }
-      $modchooser = new \theme_fordson\output\modchooser($course, $modules);
-      return $this->render($modchooser);
-    }
-  }
+  // class course_renderer extends \core_course_renderer {
+  //   public function course_modchooser($modules, $course) {
+  //     // This HILLBROOK function is overridden here to refer to the local theme's copy of modchooser to render a modified.
+  //     // Activity chooser for Hillbrook.
+  //     if (!$this->page->requires->should_create_one_time_item_now('core_course_modchooser')) {
+  //       return '';
+  //     }
+  //     $modchooser = new \theme_fordson\output\modchooser($course, $modules);
+  //     return $this->render($modchooser);
+  //   }
+  // }
   class course_renderer extends \core_course_renderer  {
     protected $countcategories = 0;
 

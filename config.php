@@ -53,24 +53,27 @@ $THEME->layouts = [
     'standard' => [
         'file' => 'course.php',
         'regions' => ['side-pre', 'fp-a', 'fp-b', 'fp-c'],
-        'defaultregion' => 'side-pre',
+        'defaultregion' => 'side-pre', 
     ],
     // The site home page.
     'frontpage' => [
         'file' => 'frontpage.php',
         'regions' => ['side-pre', 'fp-a', 'fp-b', 'fp-c'],
-        'defaultregion' => 'fp-c',
+        //'defaultregion' => 'fp-c',
+        'defaultregion' => 'side-pre',
         'options' => ['nonavbar' => true, 'langmenu' => true],
     ],
     // Main course page.
     'course' => [
         'file' => 'course.php',
         'regions' => ['side-pre', 'fp-a', 'fp-b', 'fp-c'],
-        'defaultregion' => 'fp-c',
+        //'defaultregion' => 'fp-c',
+        'defaultregion' => 'side-pre',
     ],
     'incourse' => [
         'file' => 'course.php',
         'regions' => ['side-pre', 'fp-a', 'fp-b', 'fp-c'],
+        //'defaultregion' => 'fp-c',
         'defaultregion' => 'side-pre',
     ],
     'coursecategory' => [
@@ -88,7 +91,8 @@ $THEME->layouts = [
     'admin' => [
         'file' => 'columns2.php',
         'regions' => ['side-pre', 'fp-c'],
-        'defaultregion' => 'fp-c',
+        //'defaultregion' => 'fp-c',
+        'defaultregion' => 'side-pre',
     ],
     // My dashboard page.
     'mydashboard' => [
@@ -196,15 +200,19 @@ $THEME->extrascsscallback = 'theme_fordson_get_extra_scss';
 $THEME->rendererfactory = 'theme_overridden_renderer_factory';
 
 // Toggle display of blocks
+// Set the defaults
+//$THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_DEFAULT;
 if ($THEME->settings->blockdisplay == 1) {
     $THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_DEFAULT;
 }
 if (page_location_incourse_themeconfig()) {
-    $THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_FLATNAV;
+    //$THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_DEFAULT;//BLOCK_ADDBLOCK_POSITION_FLATNAV;
 }
 if ($THEME->settings->blockdisplay == 2) {
-    $THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_FLATNAV;
+    $THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_DEFAULT;//BLOCK_ADDBLOCK_POSITION_FLATNAV;
 }
+
+//unset($THEME->addblockposition);
 
 $THEME->iconsystem = \core\output\icon_system::FONTAWESOME;
 
