@@ -52,4 +52,5 @@ if ($ADMIN->fulltree) {
     require('settings/footer_settings.php');
     require('settings/slideshow_settings.php');
     require('settings/customlogin_settings.php');
+    require('settings/font_settings.php');
 }

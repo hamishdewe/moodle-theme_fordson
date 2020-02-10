@@ -544,3 +544,8 @@ $string['viewfcfmodules'] = 'View Activities and Resources';
 
 $string['easyenrollmentintegration'] = 'Easy Enrollment Plugin';
 $string['easyenrollmentintegration_desc'] = 'The Easy Enrollment plugin (<a href="https://moodle.org/plugins/enrol_easy"> Easy Enrollment Plugin</a>) allows students to enroll in courses directly from the Moodle homepage.  The enrollment plugin uses a 6 digit code or a auto-generated QR code with webcam support to enroll students.  The student enters the code or scans the QR code and is instantly enrolled into the intended course or group within the course.  This plugin auto-activates once you install Easy Enrollment and activate it in Site Administration.  It is only activated if the plugin is installed and properly configured.';
+
+$string['fontdesignheadingsetting'] = 'Fonts';
+$string['fontfilessetting'] = 'Font files';
+$string['fontfilessetting_desc'] = 'With this dialog you can upload own font files. The upload is restricted to the font files of type .eot, .woff, .woff2, .ttf and .svg. <br/>
+Important: To be able to use the uploaded fonts within this theme, you have to add related code to your "Raw SCSS" area in the tab "Advanced Settings". A full example for this can be found in the README.md file.';
