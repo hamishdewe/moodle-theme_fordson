@@ -75,4 +75,14 @@ function theme_fordson_redirect() {
   }
 }
 
+function theme_fordson_before_http_headers() {
+  global $PAGE;
+  foreach ($PAGE->categories as $cat) {
+    $path = str_replace('/', '-', $cat->path);
+    $PAGE->add_body_class("category-path{$path}");
+    break;
+  }
+  return '';
+}
+
 theme_fordson_redirect();
