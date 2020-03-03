@@ -5,7 +5,7 @@
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48"
 	 style="enable-background:new 0 0 48 48;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#9966CC;}
+	.st0{fill:#7c1d93;}
 	.st1{fill:none;}
 </style>
 <sodipodi:namedview  bordercolor="#666666" borderopacity="1" gridtolerance="10" guidetolerance="10" id="namedview8" inkscape:current-layer="svg2" inkscape:cx="29.084746" inkscape:cy="24" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-height="480" inkscape:window-maximized="0" inkscape:window-width="742" inkscape:window-x="10" inkscape:window-y="34" inkscape:zoom="4.9166667" objecttolerance="10" pagecolor="#ffffff" showgrid="false">
@@ -13,4 +13,4 @@
 <path id="path4" class="st0" d="M47.2,5.3c0-2.6-2.1-4.7-4.6-4.7H5.4c-2.6,0-4.6,2.1-4.6,4.7v27.9c0,2.6,2.1,4.7,4.6,4.7h32.5
 	l9.3,9.3L47.2,5.3z M37.9,28.6H10.1V24h27.8V28.6z M37.9,21.6H10.1V17h27.8V21.6z M37.9,14.6H10.1V10h27.8V14.6z"/>
 <path id="path6" class="st1" d="M0,0h48v48H0V0z"/>
-</svg>
+</svg> 

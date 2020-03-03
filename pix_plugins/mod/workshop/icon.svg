@@ -20,7 +20,7 @@
     <rdf:RDF>
       <cc:Work
          rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
+        <dc:format>image/svg+xml</dc:format> 
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
       </cc:Work>
@@ -52,7 +52,7 @@
      d="M 11.898305,6 V 9 L 17.220339,5 11.898305,1 V 4 C 6.0174576,4 1.2542373,7.58 1.2542373,12 c 0,1.57 0.6120339,3.03 1.6498305,4.26 L 4.8466101,14.8 C 4.2478814,13.97 3.9152542,13.01 3.9152542,12 c 0,-3.31 3.5790679,-6 7.9830508,-6 z m 8.994237,1.74 -1.942543,1.46 c 0.585425,0.84 0.931357,1.79 0.931357,2.8 0,3.31 -3.579068,6 -7.983051,6 v -3 l -5.3220338,4 5.3220338,4 v -3 c 5.880848,0 10.644068,-3.58 10.644068,-8 0,-1.57 -0.612034,-3.03 -1.649831,-4.26 z"
      id="path2"
      inkscape:connector-curvature="0"
-     style="stroke-width:1.15347672;fill:#ff6600" />
+     style="stroke-width:1.15347672;fill:#7c1d93" />
   <path
      d="M0 0h24v24H0z"
      fill="none"
