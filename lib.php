@@ -85,4 +85,16 @@ function theme_fordson_before_http_headers() {
   return '';
 }
 
+/**
+ * Get icon mapping for fontawesome.
+ */
+function theme_fordson_get_fontawesome_icon_map() {                                                                                     
+    return [
+        'mod_forum:i/pinned' => 'fa-map-pin',
+        'mod_forum:t/selected' => 'fa-check',
+        'mod_forum:t/subscribed' => 'fa-envelope-o',
+        'mod_forum:t/unsubscribed' => 'fa-envelope-open-o',
+    ];
+}
+
 theme_fordson_redirect();

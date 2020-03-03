@@ -53,7 +53,7 @@ $THEME->layouts = [
     'standard' => [
         'file' => 'course.php',
         'regions' => ['side-pre', 'fp-a', 'fp-b', 'fp-c'],
-        'defaultregion' => 'side-pre', 
+        'defaultregion' => 'side-pre',
     ],
     // The site home page.
     'frontpage' => [
@@ -214,7 +214,8 @@ if ($THEME->settings->blockdisplay == 2) {
 
 //unset($THEME->addblockposition);
 
-$THEME->iconsystem = \core\output\icon_system::FONTAWESOME;
+//$THEME->iconsystem = \core\output\icon_system::FONTAWESOME;
+$THEME->iconsystem = '\\theme_fordson\\output\\icon_system_fontawesome_fordson';
 
 $THEME->enable_dock = false;
 $THEME->yuicssmodules = array();

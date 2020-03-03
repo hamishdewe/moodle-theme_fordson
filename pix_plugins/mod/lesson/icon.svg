@@ -7,14 +7,14 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   fill="#000000"
+   fill="#7c1d93"
    height="24"
    viewBox="0 0 24 24"
    width="24"
    version="1.1"
    id="svg6"
    sodipodi:docname="icon.svg"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"> 
   <metadata
      id="metadata12">
     <rdf:RDF>
@@ -55,6 +55,6 @@
   <path
      d="M 19.970339,0.88135593 H 3.9279661 c -1.4705509,0 -2.6737288,0.99152537 -2.6737288,2.20338977 V 20.711865 c 0,1.211864 1.2031779,2.203389 2.6737288,2.203389 H 19.970339 c 1.470551,0 2.673729,-0.991525 2.673729,-2.203389 V 3.0847457 c 0,-1.2118644 -1.203178,-2.20338977 -2.673729,-2.20338977 z M 3.9279661,3.0847457 h 6.6843229 v 8.8135593 l -3.3421619,-1.652542 -3.342161,1.652542 z"
      id="path4"
-     style="fill:#ba00ff;stroke-width:1.21359658"
+     style="fill:#7c1d93;stroke-width:1.21359658"
      inkscape:connector-curvature="0" />
 </svg>

@@ -6,7 +6,7 @@
 	 style="enable-background:new 0 0 48 48;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;}
-	.st1{fill:#CC3399;}
+	.st1{fill:#7c1d93;}
 </style>
 <sodipodi:namedview  bordercolor="#666666" borderopacity="1" gridtolerance="10" guidetolerance="10" id="namedview8" inkscape:current-layer="svg2" inkscape:cx="-0.81355916" inkscape:cy="24" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-height="480" inkscape:window-maximized="0" inkscape:window-width="742" inkscape:window-x="10" inkscape:window-y="34" inkscape:zoom="4.9166667" objecttolerance="10" pagecolor="#ffffff" showgrid="false">
 	</sodipodi:namedview>
@@ -14,4 +14,4 @@
 <path id="path6" class="st1" d="M5.3,9.9H0.6v32.9c0,2.6,2.1,4.7,4.7,4.7h32.9v-4.7H5.3V9.9z M42.8,0.5H14.7c-2.6,0-4.7,2.1-4.7,4.7
 	v28.2c0,2.6,2.1,4.7,4.7,4.7h28.2c2.6,0,4.7-2.1,4.7-4.7V5.2C47.5,2.6,45.4,0.5,42.8,0.5z M40.5,21.7H17V17h23.5V21.7z M31.1,31.1
 	H17v-4.7h14.1V31.1z M40.5,12.3H17V7.6h23.5V12.3z"/>
-</svg>
+</svg> 
