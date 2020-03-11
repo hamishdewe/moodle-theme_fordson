@@ -47,6 +47,7 @@ global $PAGE;
  * @copyright  2016 Frédéric Massart - FMCorz.net
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
+
 if ($PAGE->theme->settings->coursetilestyle < 10) {
   class course_renderer extends \core_course_renderer  {
     protected $countcategories = 0;
@@ -54,9 +55,6 @@ if ($PAGE->theme->settings->coursetilestyle < 10) {
     public function view_available_courses($id = 0, $courses = null, $totalcount = null) {
       /* available courses */
       global $CFG, $OUTPUT, $PAGE;
-
-      $courses = theme_fordson_override_view_available_courses($courses);
-
       $rcourseids = array_keys($courses);
       $acourseids = array_chunk($rcourseids, 3);
       if ($PAGE->theme->settings->coursetilestyle == 8) {
@@ -752,6 +750,7 @@ if ($PAGE->theme->settings->coursetilestyle < 10) {
 
     protected function coursecat_courses(coursecat_helper $chelper, $courses, $totalcount = null) {
         global $CFG;
+        $courses = theme_fordson_override_view_available_courses($courses);
         if ($totalcount === null) {
             $totalcount = count($courses);
         }
@@ -999,8 +998,7 @@ if ($PAGE->theme->settings->coursetilestyle < 10) {
         return $this->render($modchooser);
     }
   }
-}
-else {
+} else {
   // class course_renderer extends \core_course_renderer {
   //   public function course_modchooser($modules, $course) {
   //     // This HILLBROOK function is overridden here to refer to the local theme's copy of modchooser to render a modified.
@@ -1012,15 +1010,12 @@ else {
   //     return $this->render($modchooser);
   //   }
   // }
-  class course_renderer extends \core_course_renderer  {
-    protected $countcategories = 0;
-
-    public function view_available_courses($id = 0, $courses = null, $totalcount = null) {
-      /* available courses */
-      global $CFG, $OUTPUT, $PAGE;
-
+  //die("Tile style is {$PAGE->theme->settings->coursetilestyle}");
+  class course_renderer extends \core_course_renderer {
+    protected function coursecat_courses(coursecat_helper $chelper, $courses, $totalcount = null) {
+      global $CFG;
       $courses = theme_fordson_override_view_available_courses($courses);
-      return parent::view_available_courses($id, $courses, $totalcount);
+      return parent::coursecat_courses($chelper, $courses, $totalcount);
     }
   }
 }

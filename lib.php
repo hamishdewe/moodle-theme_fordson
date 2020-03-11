@@ -48,7 +48,6 @@ require('lib/fordson_lib.php');
  */
 function theme_fordson_override_view_available_courses($courses, $doaction = false) {
   global $CFG;
-
   $plugin_list = \core_plugin_manager::instance()->get_plugins();
   foreach ($plugin_list as $type => $list) {
     foreach ($list as $plugin) {
@@ -88,7 +87,7 @@ function theme_fordson_before_http_headers() {
 /**
  * Get icon mapping for fontawesome.
  */
-function theme_fordson_get_fontawesome_icon_map() {                                                                                     
+function theme_fordson_get_fontawesome_icon_map() {
     return [
         'mod_forum:i/pinned' => 'fa-map-pin',
         'mod_forum:t/selected' => 'fa-check',
