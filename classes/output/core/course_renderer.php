@@ -982,40 +982,7 @@ if ($PAGE->theme->settings->coursetilestyle < 10) {
                     $output .= $this->frontpage_remote_host($host);
                 }
                 $output .= html_writer::end_tag('div'); // .courses
-
             }
         }
-        return $output;
     }
-
-    public function course_modchooser($modules, $course) {
-        // This HILLBROOK function is overridden here to refer to the local theme's copy of modchooser to render a modified.
-        // Activity chooser for Hillbrook.
-        if (!$this->page->requires->should_create_one_time_item_now('core_course_modchooser')) {
-            return '';
-        }
-        $modchooser = new \theme_fordson\output\modchooser($course, $modules);
-        return $this->render($modchooser);
-    }
-  }
-} else {
-  // class course_renderer extends \core_course_renderer {
-  //   public function course_modchooser($modules, $course) {
-  //     // This HILLBROOK function is overridden here to refer to the local theme's copy of modchooser to render a modified.
-  //     // Activity chooser for Hillbrook.
-  //     if (!$this->page->requires->should_create_one_time_item_now('core_course_modchooser')) {
-  //       return '';
-  //     }
-  //     $modchooser = new \theme_fordson\output\modchooser($course, $modules);
-  //     return $this->render($modchooser);
-  //   }
-  // }
-  //die("Tile style is {$PAGE->theme->settings->coursetilestyle}");
-  class course_renderer extends \core_course_renderer {
-    protected function coursecat_courses(coursecat_helper $chelper, $courses, $totalcount = null) {
-      global $CFG;
-      $courses = theme_fordson_override_view_available_courses($courses);
-      return parent::coursecat_courses($chelper, $courses, $totalcount);
-    }
-  }
 }

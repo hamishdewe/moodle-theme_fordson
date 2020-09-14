@@ -88,10 +88,9 @@ function theme_fordson_pluginfile($course, $cm, $context, $filearea, $args, $for
         return $theme->setting_file_serve('slide2image', $args, $forcedownload, $options);
     } else if ($filearea === 'slide3image') {
         return $theme->setting_file_serve('slide3image', $args, $forcedownload, $options);
+
     } else if ($filearea === 'fontfiles') {
         return $theme->setting_file_serve('fontfiles', $args, $forcedownload, $options);
-    } else {
-        send_file_not_found();
     }
 }
 
