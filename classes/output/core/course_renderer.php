@@ -985,4 +985,5 @@ if ($PAGE->theme->settings->coursetilestyle < 10) {
             }
         }
     }
+  }
 }
